@@ -12,6 +12,7 @@ jobs:
     - Unity2018.4.6f1
     - COG-UnityCache-WUS2-01
     - SDK_18362 -equals TRUE
+    - Agent.Name -equals AIPMRBuild01
   steps:
   - template: templates/ci-common.yml
     parameters:
