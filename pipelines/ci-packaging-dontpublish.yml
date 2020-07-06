@@ -14,8 +14,8 @@ jobs:
     - SDK_18362 -equals TRUE
     - Agent.Name -equals AIPMRBuild01
   steps:
-  - template: templates/ci-common.yml
+  - template: templates/tasks/unitybuild.yml
     parameters:
-      packagingEnabled: true
-      packagePublishing: false
+      Arch: 'x86'
+      Platform: 'Standalone'
       UnityVersion: $(Unity2018Version)
